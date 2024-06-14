@@ -1,0 +1,20 @@
+<div class="full-screen">
+  <button (click)="openSide()" mat-icon-button class="toggle-button-icon">
+    <mat-icon color="black" >menu</mat-icon>
+  </button>
+  <!-- <mat-toolbar class="top-nav">
+    
+    <span>Portfolio</span>
+    <span class="example-spacer"></span>
+   
+  </mat-toolbar> -->
+    <mat-sidenav-container class="page-container">
+      <mat-sidenav *ngIf="sideOpen"  opened [mode]="modeNav" class="side-nav content">
+      <!-- <mat-sidenav *ngIf="sideOpen"   mode="side" class="side-nav content"> -->
+        <app-sidenav></app-sidenav>
+      </mat-sidenav>
+
+      <router-outlet></router-outlet>
+    </mat-sidenav-container>
+  
+</div>

@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.full-screen{
+    width: 100%;
+    height: 100%;
+}
+
+.side-nav{
+    width: 300px;
+}
+
+.top-nav{
+    background-color:darkblue !important;
+    justify-content: space-between;
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #555;
+}
+
+.content{
+    padding: 15px ;
+    /* width: 80%; */
+    text-align: center;
+}
+
+.home-container{
+    display: flex;    
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    /* overflow-y: scroll; */
+
+    
+}
+
+.toggle-button-icon{
+    position: absolute !important;
+    display: flex !important;
+    left: 10px !important;
+    top: 10px !important;
+    z-index: 2 !important;
+    background-color: #555 !important;
+    color:aliceblue !important;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    /* background-image: url("src/assets/images/Categorias.png") */
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: top;
+    opacity: 0.5;
+}
+.row-container{
+    margin-top: 20px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+.skill-icon{
+    height: 70px;
+    /* width: 100px; */
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+.opacity-div{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3) ;
+}
+
+.example-card {
+    max-width: 350px;
+  }
+  
+.side-nav-content{
+    height: 90%;
+    margin-top: 50px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.side-nav-section{
+    text-align: left;
+}
+.content-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+.actions-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    gap: 20;
+
+}
+.min-icon0{
+    width: 20px;
+}
+.min-icon{
+    width: 30px;
+}
+.link-icon{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.min-icon2{
+    width: 40px !important;
+    height: 40px !important;
+}

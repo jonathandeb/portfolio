@@ -1,0 +1,126 @@
+<div id="bandsContainer"  class="home-container">
+    <div *ngIf="bgImg" class="banner" [ngStyle]="{'background-image': 'url('+bgImg+')'}">
+
+    <div class="banner">
+        <!-- <div class="opacity-div">
+        </div> -->
+            <!-- <img class="banner-img" src="assets/images/Categorias.png" alt=""> -->
+    </div>
+    <div class="content">
+
+        <h2>Frameworks</h2>
+
+        <div class="row-container">
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/angular.png" alt="">
+                Angular
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/react.png" alt="">
+                React
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/native.png" alt="">
+                React Native
+            </div>
+        </div>
+        <h2>Environment </h2>
+
+        <div class="row-container">
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/typescript.png" alt="">
+                TypeScript
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/css.png" alt="">
+                CSS
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/html.png" alt="">
+                HTML
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/redux.png" alt="">
+                Redux
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/express.png" alt="">
+                Express
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/nodejs.png" alt="">
+                Nodejs
+            </div>
+        </div>
+        <h2>Others</h2>
+
+        <div class="row-container">
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/bootstrap.png" alt="">
+                Bootstrap
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/material.png" alt="">
+                A. Material
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/firebase.png" alt="">
+                Firebase
+            </div>
+            <div class="skill-container">
+                <img class="skill-icon" src="assets/icons/mongo.png" alt="">
+                MongoDB
+            </div>
+        </div>
+        <h2>Projects</h2>
+        <div class="row-container">
+            <mat-card *ngFor="let project of projectsArray" class="example-card">
+                <mat-card-header>
+                  <mat-card-title>{{project.name}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="project.img" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{project.text}}
+                  </p>
+                  <div>
+                    Skills: 
+                      <div class="content-skills">
+                        <div *ngFor="let item of project.skills">
+                            <img class="min-icon0" src="assets/icons/{{item}}.png" alt="">
+                        </div>
+                      </div>
+                  </div>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div class="actions-container">                        
+                        <a [href]="project.link" mat-icon-button target="_blank">
+                            <mat-icon class="clickable">open_in_new</mat-icon>                        
+                        </a>
+                        <a [href]="project.yutu" mat-icon-button class="link-icon" target="_blank">
+                            <img class="min-icon2" src="assets/icons/youtube.png" alt="">                      
+                        </a>
+                        
+                    </div>   
+                  <!-- <button mat-button>Git</button> -->
+                </mat-card-actions>
+              </mat-card>
+        </div>
+        <h2>Contact me!</h2>
+        <div class="row d-flex justify-content-center">
+            <div class="col-4">
+                <button mat-button (click)="sendWhats()">Send Whatsapp </button>
+                
+            </div>
+            <div *ngIf="!sideOpen" class="col-4">
+                <button mat-button  (click)="openSide()">My Socials</button>
+                
+            </div>
+            <!-- <div class="col-4">
+                <button mat-button (click)="sendEmail()"> Email  </button>
+                
+            </div> -->
+        </div>
+        
+    </div>
+</div>
