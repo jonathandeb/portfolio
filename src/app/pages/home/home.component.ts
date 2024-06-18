@@ -31,6 +31,7 @@ const projects=[
     text:'Lender App',
     skills:['angular','redux','firebase','html','css','bootstrap'],
     link:'',
+    yutu:'https://www.youtube.com/playlist?list=PLcujpNtDvZY2nKEWqGSGeeHFQPbeb7AU2',
     git:'',
   },
 ]
